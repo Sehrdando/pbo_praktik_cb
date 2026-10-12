@@ -5,12 +5,20 @@ from pathlib import Path
 FOLDER_PROYEK = Path(__file__).resolve().parent
 
 
+
 def buka_tambah_kendaraan():
-    subprocess.run([sys.executable, str(FOLDER_PROYEK / "tambah_buku.py")], cwd=FOLDER_PROYEK)
+    subprocess.run(
+        [sys.executable, str(FOLDER_PROYEK / "tambah_kendaraan.py")],
+        cwd=FOLDER_PROYEK
+    )
 
 
 def buka_tampil_kendaraan():
-    subprocess.run([sys.executable, str(FOLDER_PROYEK / "tampil_buku.py")], cwd=FOLDER_PROYEK)
+    subprocess.run(
+        [sys.executable, str(FOLDER_PROYEK / "tampil_kendaraan.py")],
+        cwd=FOLDER_PROYEK
+    )
+
 
 
 def menu_utama():
